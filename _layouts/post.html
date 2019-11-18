@@ -12,11 +12,17 @@ layout: default
     </div>
 
     {% if page.image %}
-      <div class="post__img">
-        <div>
-          <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
-        </div>
+    <div class="post__img">
+      <div>
+        <figure class="absolute-bg">
+            <img src="{{ page.image.file }}" 
+              {% if page.image.alt %} alt="{{ page.image.alt }}" {% endif %}/>
+            {% if page.image.credit %}
+              <figcaption>{{ page.image.credit }}</figcaption>
+            {% endif %}
+        </figure>
       </div>
+    </div>
     {% endif %}
 
     <div class="post__content section-padding">
@@ -52,8 +58,6 @@ layout: default
         </div>
       </div>
     {% endif %}
-
-    {% include disqus.html %}
 
   </article>
 </div>
