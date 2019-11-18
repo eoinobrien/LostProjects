@@ -12,12 +12,12 @@ layout: default
     {% if page.image %}
       <div class="post__img">
         <div>
-          <figure class="absolute-bg">
-              <img src="{{ page.image.file }}" 
-                {% if page.image.alt %} alt="{{ page.image.alt }}" {% endif %}/>
-              {% if page.image.credit %}
-                <figcaption>{{ page.image.credit }}</figcaption>
-              {% endif %}
+          <figure class="hero-image">
+            <img src="{{ page.image.src }}" 
+              {% if page.image.alt %} alt="{{ page.image.alt }}" {% endif %}/>
+            {% if page.image.credit %}
+              <figcaption>{{ page.image.credit }}</figcaption>
+            {% endif %}
           </figure>
         </div>
       </div>

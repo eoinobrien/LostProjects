@@ -3,8 +3,8 @@ layout: post
 title: "Blue Bottle"
 date: 2017-10-18
 description: 
-image: 
-  file: /assets/images/placeholder-5.jpg
+image:
+  src: /assets/images/placeholder-5.jpg
 author: Thomas Vaeth
 tags: 
   - Squid

@@ -3,8 +3,8 @@ layout: post
 title: "Roof Party"
 date: 2017-10-20
 description: 
-image: 
-  file: /assets/images/placeholder-1.jpg
+image:
+  src: /assets/images/placeholder-1.jpg
 author: Thomas Vaeth
 tags: 
   - Squid
